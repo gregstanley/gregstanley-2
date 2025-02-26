@@ -1,0 +1,9 @@
+<h2>One Time Passcode</h2>
+
+<p>Time left: {{ countdown() }} seconds</p>
+
+<p class="text-xs opacity-30">Next: {{ otpNext() || "Generating..." }}</p>
+<p>OTP: {{ otp() || "Generating..." }}</p>
+<p class="text-xs opacity-30">
+  Previous: {{ otpPrevious() || "Generating..." }}
+</p>

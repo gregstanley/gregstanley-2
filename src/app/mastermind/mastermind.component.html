@@ -1,0 +1,31 @@
+<h2>Mastermind</h2>
+
+<p>Guess the animal</p>
+<input
+  type="text"
+  class="border solid min-w-fit p-4 text-xl"
+  [formControl]="formGroup.controls.guess"
+/>
+
+@if (guessIncorrectError) {
+  <div class="flex gap-1">
+    @for (t of guessIncorrectError; track $index) {
+      @switch (t) {
+        @case (0) {
+          <fa-icon [icon]="faAngry" class="text-red-500"></fa-icon>
+        }
+        @case (1) {
+          <fa-icon [icon]="faCircle" class="text-yellow-500"></fa-icon>
+        }
+        @case (2) {
+          <fa-icon [icon]="faCircleCheck" class="text-green-500"></fa-icon>
+        }
+      }
+    }
+  </div>
+}
+
+<details>
+  <summary>Answer</summary>
+  <span>{{ textValue() }}</span>
+</details>
