@@ -1,3 +1,6 @@
+/* Temporary hack to show images when on a path in prod (empty to test in dev) */
+$path: "/gregstanley-2";
+
 /* Default background image */
 div.fullscreen-bg {
   position: fixed;
@@ -5,8 +8,8 @@ div.fullscreen-bg {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: url("/images/pexels-rostislav-5011647-360x640.webp") no-repeat
-    center center;
+  background: url($path + "/images/pexels-rostislav-5011647-360x640.webp")
+    no-repeat center center;
   background-size: cover;
   z-index: -1;
 }
@@ -14,6 +17,6 @@ div.fullscreen-bg {
 /* Background image for screens wider than 768px */
 @media (min-width: 768px) {
   div.fullscreen-bg {
-    background-image: url("/images/pexels-rostislav-5011647-1920x1080.webp");
+    background-image: url($path + "/images/pexels-rostislav-5011647-1920x1080.webp");
   }
 }
