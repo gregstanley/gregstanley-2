@@ -64,7 +64,8 @@
               "@angular/material/prebuilt-themes/azure-blue.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "deployUrl": "https://gregstanley.github.io/gregstanley-2/"
           },
           "configurations": {
             "production": {
