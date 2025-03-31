@@ -65,7 +65,7 @@
               "src/styles.scss"
             ],
             "scripts": [],
-            "deployUrl": "https://gregstanley.github.io/gregstanley-2/"
+            "deployUrl": "/gregstanley-2/"
           },
           "configurations": {
             "production": {

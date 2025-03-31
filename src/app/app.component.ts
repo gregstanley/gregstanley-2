@@ -14,7 +14,7 @@ import { OtpComponent } from './otp/otp.component';
       <header class="py-4 bg-sky-900 p-8 opacity-80 text-white">
         <h1>
           <img
-            src="/images/angular-full.svg"
+            src="./images/angular-full.svg"
             height="3rem"
             class="h-12"
             alt="Angular logo"
