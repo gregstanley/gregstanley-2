@@ -1,3 +1,4 @@
-pnpm ng lint
-pnpm ng test --watch=false
-pnpm lint-staged --allow-empty
+echo "Running Husky pre-commit hook..."
+pnpm run lint
+pnpm run test --watch=false
+pnpm run lint-staged --allow-empty
