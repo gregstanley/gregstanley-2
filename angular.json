@@ -64,8 +64,7 @@
               "@angular/material/prebuilt-themes/azure-blue.css",
               "src/styles.scss"
             ],
-            "scripts": [],
-            "deployUrl": "/gregstanley-2/"
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -81,12 +80,18 @@
                   "maximumError": "8kB"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "stylePreprocessorOptions": {
+                "includePaths": ["src/scss/prod"]
+              }
             },
             "development": {
               "optimization": false,
               "extractLicenses": false,
-              "sourceMap": true
+              "sourceMap": true,
+              "stylePreprocessorOptions": {
+                "includePaths": ["src/scss/dev"]
+              }
             }
           },
           "defaultConfiguration": "production"
